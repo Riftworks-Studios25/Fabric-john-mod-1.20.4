@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "testmod:john_block"
+    }
+  ],
+  "result": {
+    "item": "testmod:john_shard",
+    "count": 9
+  }
+}
