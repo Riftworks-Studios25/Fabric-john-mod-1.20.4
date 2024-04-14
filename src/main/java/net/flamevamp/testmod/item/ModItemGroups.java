@@ -16,6 +16,12 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.john"))
                     .icon(() -> new ItemStack(ModItems.JOHN_SHARD)).entries((displayContext, entries) -> {
                         entries.add(ModItems.JOHN_SHARD);
+
+                        entries.add(ModItems.RAW_NOSE);
+                        entries.add(ModItems.COOKED_NOSE);
+
+                        entries.add(ModItems.NOSE_SPAWN_EGG);
+
                         entries.add(ModBlocks.JOHN_BLOCK);
 
 

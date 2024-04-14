@@ -1,7 +1,13 @@
 {
   "item.testmod.john_shard": "John Shard",
 
+  "item.testmod.raw_nose": "Raw Nose",
+  "item.testmod.cooked_nose": "Cooked Nose",
+
+  "item.testmod.nose_spawn_egg": "Nose Spawn Egg",
+
   "block.testmod.john_block": "Block of John",
+
 
   "itemgroup.john": "John Group"
 }

@@ -25,7 +25,7 @@ public class NoseEntity extends HostileEntity {
 
     @Override
     protected void initGoals() {
-        this.goalSelector.add(0, new SwimGoal(this));
+        this.goalSelector.add(1, new SwimGoal(this));
         this.goalSelector.add(1, new MeleeAttackGoal(this, 0.6f, false));
         this.goalSelector.add(2, new PowderSnowJumpGoal(this, this.getWorld()));
         this.goalSelector.add(2, new WanderAroundFarGoal(this, 10));
