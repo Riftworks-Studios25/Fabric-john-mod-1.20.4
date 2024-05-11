@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.flamevamp.testmod.block.ModBlocks;
 import net.flamevamp.testmod.entity.ModEntities;
+import net.flamevamp.testmod.entity.custom.JohnEntity;
 import net.flamevamp.testmod.entity.custom.NoseEntity;
 import net.flamevamp.testmod.item.ModItemGroups;
 import net.flamevamp.testmod.item.ModItems;
@@ -23,6 +24,7 @@ public class TestMod implements ModInitializer {
 		ModEntities.registerModEntities();
 
 		FabricDefaultAttributeRegistry.register(ModEntities.NOSE, NoseEntity.createNoseAttributes());
+		FabricDefaultAttributeRegistry.register(ModEntities.JOHN, JohnEntity.createJohnAttributes());
 	}
 
 }

@@ -41,7 +41,7 @@ public class TestModDataGenerator implements DataGeneratorEntrypoint {
 					.display(
 							ModItems.COOKED_NOSE, // The display icon
 							Text.literal("Something Smells Good"), // The title
-							Text.literal("Let him cook!"), // The description
+							Text.literal("Obtain a cooked nose"), // The description
 							new Identifier("textures/gui/advancements/backgrounds/adventure.png"), // Background image used
 							AdvancementFrame.TASK, // Options: TASK, CHALLENGE, GOAL
 							true, // Show toast top right

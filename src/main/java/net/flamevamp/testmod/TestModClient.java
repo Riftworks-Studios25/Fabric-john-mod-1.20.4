@@ -4,15 +4,17 @@ import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.flamevamp.testmod.entity.ModEntities;
-import net.flamevamp.testmod.entity.client.ModModelLayers;
-import net.flamevamp.testmod.entity.client.NoseModel;
-import net.flamevamp.testmod.entity.client.NoseRenderer;
+import net.flamevamp.testmod.entity.client.*;
+import net.minecraft.client.render.entity.model.VillagerResemblingModel;
 
 public class TestModClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.NOSE, NoseModel::getTexturedModelData);
         EntityRendererRegistry.register(ModEntities.NOSE, NoseRenderer::new);
+
+        EntityModelLayerRegistry.registerModelLayer(ModModelLayers.JOHN, JohnModel::getTexturedModelData);
+        EntityRendererRegistry.register(ModEntities.JOHN, JohnRenderer::new);
 
 
     }
