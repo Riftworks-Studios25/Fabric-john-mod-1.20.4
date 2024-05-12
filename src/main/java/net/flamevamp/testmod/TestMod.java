@@ -9,6 +9,9 @@ import net.flamevamp.testmod.entity.custom.JohnEntity;
 import net.flamevamp.testmod.entity.custom.NoseEntity;
 import net.flamevamp.testmod.item.ModItemGroups;
 import net.flamevamp.testmod.item.ModItems;
+import net.kyrptonaught.customportalapi.CustomPortalBlock;
+import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
+import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -25,6 +28,13 @@ public class TestMod implements ModInitializer {
 
 		FabricDefaultAttributeRegistry.register(ModEntities.NOSE, NoseEntity.createNoseAttributes());
 		FabricDefaultAttributeRegistry.register(ModEntities.JOHN, JohnEntity.createJohnAttributes());
+
+		CustomPortalBuilder.beginPortal()
+				.frameBlock(ModBlocks.JOHN_BLOCK)
+				.lightWithItem(ModItems.JOHN_SHARD)
+				.destDimID(new Identifier(TestMod.MOD_ID, "dim"))
+				.tintColor(156, 109, 37)
+				.registerPortal();
 	}
 
 }

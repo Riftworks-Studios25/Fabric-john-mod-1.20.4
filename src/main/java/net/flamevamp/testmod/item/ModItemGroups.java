@@ -24,6 +24,11 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.JOHN_BLOCK);
 
+                        entries.add(ModBlocks.JOHNSTONE);
+                        entries.add(ModBlocks.JOHNSTONE_STAIRS);
+                        entries.add(ModBlocks.JOHNSTONE_SLAB);
+                        entries.add(ModBlocks.JOHNSTONE_WALL);
+
 
 
                     }).build());

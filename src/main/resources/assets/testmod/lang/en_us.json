@@ -10,5 +10,10 @@
 
   "block.testmod.john_block": "Block of John",
 
+  "block.testmod.johnstone": "Johnstone",
+  "block.testmod.johnstone_stairs": "Johnstone Stairs",
+  "block.testmod.johnstone_slab": "Johnstone Slab",
+  "block.testmod.johnstone_wall": "Johnstone Wall",
+
   "itemgroup.john": "John Group"
 }

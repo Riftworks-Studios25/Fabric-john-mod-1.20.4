@@ -6,11 +6,15 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricAdvancementProvider;
 import net.flamevamp.testmod.datagen.*;
 import net.flamevamp.testmod.item.ModItems;
+import net.flamevamp.testmod.world.biome.ModBiomes;
+import net.flamevamp.testmod.world.dimension.ModDimensions;
 import net.minecraft.advancement.Advancement;
 import net.minecraft.advancement.AdvancementEntry;
 import net.minecraft.advancement.AdvancementFrame;
 import net.minecraft.advancement.criterion.InventoryChangedCriterion;
 import net.minecraft.item.Items;
+import net.minecraft.registry.RegistryBuilder;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
@@ -27,6 +31,13 @@ public class TestModDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModModelProvider::new);
 		pack.addProvider(ModRecipeProvider::new);
 		pack.addProvider(AdvancementsProvider::new);
+		pack.addProvider(ModWorldGenerator::new);
+	}
+
+	@Override
+	public void buildRegistry(RegistryBuilder registryBuilder) {
+		registryBuilder.addRegistry(RegistryKeys.DIMENSION_TYPE, ModDimensions::bootstrapType);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, ModBiomes::boostrap);
 	}
 
 	static class AdvancementsProvider extends FabricAdvancementProvider {
@@ -41,7 +52,7 @@ public class TestModDataGenerator implements DataGeneratorEntrypoint {
 					.display(
 							ModItems.COOKED_NOSE, // The display icon
 							Text.literal("Something Smells Good"), // The title
-							Text.literal("Obtain a cooked nose"), // The description
+							Text.literal("Obtain a Cooked Nose"), // The description
 							new Identifier("textures/gui/advancements/backgrounds/adventure.png"), // Background image used
 							AdvancementFrame.TASK, // Options: TASK, CHALLENGE, GOAL
 							true, // Show toast top right

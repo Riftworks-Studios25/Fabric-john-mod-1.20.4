@@ -16,7 +16,24 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
-        getOrCreateTagBuilder(BlockTags.HOE_MINEABLE).add(ModBlocks.JOHN_BLOCK);
+        getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
+                .add(ModBlocks.JOHN_BLOCK);
+
+        getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
+                .add(ModBlocks.JOHNSTONE)
+                .add(ModBlocks.JOHNSTONE_STAIRS)
+                .add(ModBlocks.JOHNSTONE_SLAB)
+                .add(ModBlocks.JOHNSTONE_WALL);
+
+        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+                .add(ModBlocks.JOHNSTONE)
+                .add(ModBlocks.JOHNSTONE_STAIRS)
+                .add(ModBlocks.JOHNSTONE_SLAB)
+                .add(ModBlocks.JOHNSTONE_WALL);
+
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.JOHNSTONE_WALL);
     }
+
 }
 
