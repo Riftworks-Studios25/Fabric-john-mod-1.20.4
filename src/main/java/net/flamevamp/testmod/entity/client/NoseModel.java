@@ -7,9 +7,6 @@ import net.minecraft.client.render.entity.model.EntityModel;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.Entity;
 
-// Made with Blockbench 4.9.4
-// Exported for Minecraft version 1.17+ for Yarn
-// Paste this class into your mod and generate all required imports
 public class NoseModel<T extends NoseEntity> extends EntityModel<T> {
 	private final ModelPart bone;
 	public NoseModel(ModelPart root) {

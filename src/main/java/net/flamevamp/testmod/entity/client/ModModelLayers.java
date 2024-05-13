@@ -10,6 +10,9 @@ public class ModModelLayers {
     public static final EntityModelLayer NOSE =
             new EntityModelLayer(new Identifier(TestMod.MOD_ID, "nose"), "main");
 
+    public static final EntityModelLayer WITCH_NOSE =
+            new EntityModelLayer(new Identifier(TestMod.MOD_ID, "witch_nose"), "main");
+
     public static final EntityModelLayer JOHN =
             new EntityModelLayer(new Identifier(TestMod.MOD_ID, "john"), "main");
 }

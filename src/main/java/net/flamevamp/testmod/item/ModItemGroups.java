@@ -21,6 +21,7 @@ public class ModItemGroups {
                         entries.add(ModItems.COOKED_NOSE);
 
                         entries.add(ModItems.NOSE_SPAWN_EGG);
+                        entries.add(ModItems.WITCH_NOSE_SPAWN_EGG);
 
                         entries.add(ModBlocks.JOHN_BLOCK);
 

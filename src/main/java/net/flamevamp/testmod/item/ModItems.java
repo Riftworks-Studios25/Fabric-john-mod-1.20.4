@@ -21,7 +21,10 @@ public class ModItems {
             new Item(new FabricItemSettings().food(ModFoodComponents.COOKED_NOSE)));
 
     public static final Item NOSE_SPAWN_EGG = registerItem("nose_spawn_egg",
-            new SpawnEggItem(ModEntities.NOSE, 0xa905E43, 0xa75472F,
+            new SpawnEggItem(ModEntities.NOSE, 0xa905E43, 107-121-32,
+                    new FabricItemSettings()));
+    public static final Item WITCH_NOSE_SPAWN_EGG = registerItem("witch_nose_spawn_egg",
+            new SpawnEggItem(ModEntities.WITCH_NOSE, 0xa905E43, 0xa75472F,
                     new FabricItemSettings()));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {

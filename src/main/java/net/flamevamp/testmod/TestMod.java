@@ -12,6 +12,7 @@ import net.flamevamp.testmod.item.ModItems;
 import net.kyrptonaught.customportalapi.CustomPortalBlock;
 import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
 import net.minecraft.util.Identifier;
+import net.minecraft.world.gen.feature.EndGatewayFeature;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -27,6 +28,7 @@ public class TestMod implements ModInitializer {
 		ModEntities.registerModEntities();
 
 		FabricDefaultAttributeRegistry.register(ModEntities.NOSE, NoseEntity.createNoseAttributes());
+		FabricDefaultAttributeRegistry.register(ModEntities.WITCH_NOSE, NoseEntity.createNoseAttributes());
 		FabricDefaultAttributeRegistry.register(ModEntities.JOHN, JohnEntity.createJohnAttributes());
 
 		CustomPortalBuilder.beginPortal()

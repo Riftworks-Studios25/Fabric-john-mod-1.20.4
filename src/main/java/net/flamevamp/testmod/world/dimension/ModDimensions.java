@@ -37,7 +37,7 @@ public class ModDimensions {
                 256,
                 256,
                 BlockTags.INFINIBURN_OVERWORLD,
-                DimensionTypes.OVERWORLD_ID,
+                DimensionTypes.THE_END_ID,
                 1.0f,
                 new DimensionType.MonsterSettings(false, false, UniformIntProvider.create(0, 0), 0)));
     }

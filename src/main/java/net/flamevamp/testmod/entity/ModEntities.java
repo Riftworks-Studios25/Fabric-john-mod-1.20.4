@@ -5,6 +5,7 @@ import net.fabricmc.fabric.impl.object.builder.FabricEntityType;
 import net.flamevamp.testmod.TestMod;
 import net.flamevamp.testmod.entity.custom.JohnEntity;
 import net.flamevamp.testmod.entity.custom.NoseEntity;
+import net.flamevamp.testmod.entity.custom.WitchNoseEntity;
 import net.minecraft.entity.EntityDimensions;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
@@ -16,6 +17,11 @@ public class ModEntities {
     public static final EntityType<NoseEntity> NOSE = Registry.register(Registries.ENTITY_TYPE,
             new Identifier(TestMod.MOD_ID, "nose"),
             FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, NoseEntity::new)
+                    .dimensions(EntityDimensions.fixed(0.5f,0.33f)).build());
+
+    public static final EntityType<WitchNoseEntity> WITCH_NOSE = Registry.register(Registries.ENTITY_TYPE,
+            new Identifier(TestMod.MOD_ID, "witch_nose"),
+            FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, WitchNoseEntity::new)
                     .dimensions(EntityDimensions.fixed(0.5f,0.33f)).build());
 
     public static final EntityType<JohnEntity> JOHN = Registry.register(Registries.ENTITY_TYPE,

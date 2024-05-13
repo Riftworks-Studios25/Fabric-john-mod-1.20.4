@@ -39,5 +39,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.NOSE_SPAWN_EGG,
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")),
                         Optional.empty()));
+        itemModelGenerator.register(ModItems.WITCH_NOSE_SPAWN_EGG,
+                new Model(Optional.of(new Identifier("item/template_spawn_egg")),
+                        Optional.empty()));
     }
 }

@@ -37,7 +37,6 @@ public class TestModDataGenerator implements DataGeneratorEntrypoint {
 	@Override
 	public void buildRegistry(RegistryBuilder registryBuilder) {
 		registryBuilder.addRegistry(RegistryKeys.DIMENSION_TYPE, ModDimensions::bootstrapType);
-		registryBuilder.addRegistry(RegistryKeys.BIOME, ModBiomes::boostrap);
 	}
 
 	static class AdvancementsProvider extends FabricAdvancementProvider {
