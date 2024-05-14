@@ -4,7 +4,7 @@
   "step": "surface_structures",
   "spawn_overrides": {},
   "start_pool": "testmod:john_boss/boss_pool",
-  "size": 3,
+  "size": 10,
   "terrain_adaptation": "beard_thin",
   "start_height": {
     "absolute": 64

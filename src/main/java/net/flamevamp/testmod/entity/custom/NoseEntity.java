@@ -67,7 +67,7 @@ public class NoseEntity extends HostileEntity {
     public static DefaultAttributeContainer.Builder createNoseAttributes() {
         return MobEntity.createMobAttributes()
                 .add(EntityAttributes.GENERIC_MAX_HEALTH, 8.5)
-                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.6f)
+                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.65f)
                 .add(EntityAttributes.GENERIC_ARMOR, 0.0f)
                 .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 2.5f);
     }

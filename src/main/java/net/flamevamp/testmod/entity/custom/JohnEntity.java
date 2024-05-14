@@ -1,7 +1,10 @@
 package net.flamevamp.testmod.entity.custom;
 
 import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
+import net.minecraft.client.render.entity.feature.SkinOverlayOwner;
+import net.minecraft.client.sound.Sound;
 import net.minecraft.entity.*;
+import net.minecraft.entity.ai.RangedAttackMob;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
@@ -14,6 +17,7 @@ import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.mob.PathAwareEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.PersistentProjectileEntity;
+import net.minecraft.entity.projectile.WitherSkullEntity;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.registry.tag.DamageTypeTags;
 import net.minecraft.server.network.ServerPlayerEntity;
@@ -23,15 +27,17 @@ import net.minecraft.text.Text;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
+import net.minecraft.world.WorldEvents;
 import org.jetbrains.annotations.Nullable;
 
-public class JohnEntity extends HostileEntity {
+public class JohnEntity extends HostileEntity implements SkinOverlayOwner {
 
     private final ServerBossBar bossBar = (ServerBossBar)new ServerBossBar(this.getDisplayName(), BossBar.Color.YELLOW, BossBar.Style.PROGRESS).setDarkenSky(false);
     public JohnEntity(EntityType<? extends JohnEntity> entityType, World world) {
         super(entityType, world);
     }
-
+    private final int[] skullCooldowns = new int[2];
+    private final int[] chargedSkullCooldowns = new int[2];
     @Override
     public void setCustomName(@Nullable Text name) {
         super.setCustomName(name);
@@ -44,8 +50,12 @@ public class JohnEntity extends HostileEntity {
         this.bossBar.addPlayer(player);
     }
 
+    @Override
+    public void checkDespawn() {
+    }
+
     public boolean shouldRenderOverlay() {
-        return this.getHealth() <= this.getMaxHealth() / 2.0f;
+        return this.getHealth() <= this.getMaxHealth() * 0.75f;
     }
 
     @Override
@@ -73,7 +83,7 @@ public class JohnEntity extends HostileEntity {
     @Override
     protected void initGoals() {
         this.goalSelector.add(1, new SwimGoal(this));
-        this.goalSelector.add(1, new MeleeAttackGoal(this, 0.6f, true));
+        this.goalSelector.add(1, new MeleeAttackGoal(this, 0.6f, false));
         this.targetSelector.add(1, new RevengeGoal(this, new Class[0]).setGroupRevenge(new Class[0]));
         this.targetSelector.add(1, new ActiveTargetGoal<PlayerEntity>((MobEntity)this, PlayerEntity.class, true));
         this.goalSelector.add(2, new PowderSnowJumpGoal(this, this.getWorld()));
@@ -108,9 +118,10 @@ public class JohnEntity extends HostileEntity {
     public static DefaultAttributeContainer.Builder createJohnAttributes() {
         return MobEntity.createMobAttributes()
                 .add(EntityAttributes.GENERIC_MAX_HEALTH, 250)
-                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.5f)
-                .add(EntityAttributes.GENERIC_ARMOR, 0.0f)
+                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.55f)
+                .add(EntityAttributes.GENERIC_ARMOR, 4.0f)
                 .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 6.5f)
-                .add(EntityAttributes.GENERIC_ATTACK_SPEED, 4.0f);
+                .add(EntityAttributes.GENERIC_ATTACK_SPEED, 2.0f)
+                .add(EntityAttributes.GENERIC_KNOCKBACK_RESISTANCE, 1f);
     }
 }
