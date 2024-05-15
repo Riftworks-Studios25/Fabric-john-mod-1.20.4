@@ -1,0 +1,14 @@
+{
+  "type": "johnmod:nose",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "johnmod:raw_nose"
+        }
+      ]
+    }
+  ]
+}

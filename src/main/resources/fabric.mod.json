@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "testmod",
+	"id": "johnmod",
 	"version": "${version}",
 	"name": "Test Mod",
 	"description": "This is an example description! Tell everyone what your mod is about!",
@@ -12,21 +12,21 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "MIT",
-	"icon": "assets/testmod/icon.png",
+	"icon": "assets/johnmod/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.flamevamp.testmod.TestMod"
+			"net.flamevamp.johnmod.JohnMod"
 		],
 		"client": [
-			"net.flamevamp.testmod.TestModClient"
+			"net.flamevamp.johnmod.JohnModClient"
 		],
 		"fabric-datagen": [
-			"net.flamevamp.testmod.TestModDataGenerator"
+			"net.flamevamp.johnmod.JohnModDataGenerator"
 		]
 	},
 	"mixins": [
-		"testmod.mixins.json"
+		"johnmod.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.15.9",

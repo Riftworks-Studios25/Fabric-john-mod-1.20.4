@@ -1,0 +1,23 @@
+{
+  "item.johnmod.john_shard": "John Shard",
+
+  "item.johnmod.raw_nose": "Raw Nose",
+  "item.johnmod.cooked_nose": "Cooked Nose",
+
+  "entity.johnmod.john": "John",
+  "entity.johnmod.nose": "Nose",
+  "entity.johnmod.witch_nose": "Witch Nose",
+
+  "item.johnmod.nose_spawn_egg": "Nose Spawn Egg",
+  "item.johnmod.witch_nose_spawn_egg": "Witch Nose Spawn Egg",
+
+  "block.johnmod.john_block": "Block of John",
+  "block.johnmod.john_frame": "John Portal Frame",
+
+  "block.johnmod.johnstone": "Johnstone",
+  "block.johnmod.johnstone_stairs": "Johnstone Stairs",
+  "block.johnmod.johnstone_slab": "Johnstone Slab",
+  "block.johnmod.johnstone_wall": "Johnstone Wall",
+
+  "itemgroup.john": "John Group"
+}
