@@ -24,6 +24,7 @@ public class ModItemGroups {
                         entries.add(ModItems.WITCH_NOSE_SPAWN_EGG);
 
                         entries.add(ModBlocks.JOHN_BLOCK);
+                        entries.add(ModBlocks.JOHN_FRAME);
 
                         entries.add(ModBlocks.JOHNSTONE);
                         entries.add(ModBlocks.JOHNSTONE_STAIRS);

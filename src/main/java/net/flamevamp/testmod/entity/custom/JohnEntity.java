@@ -12,6 +12,8 @@ import net.minecraft.entity.boss.BossBar;
 import net.minecraft.entity.boss.ServerBossBar;
 import net.minecraft.entity.boss.WitherEntity;
 import net.minecraft.entity.damage.DamageSource;
+import net.minecraft.entity.damage.DamageType;
+import net.minecraft.entity.damage.DamageTypes;
 import net.minecraft.entity.mob.HostileEntity;
 import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.mob.PathAwareEntity;
@@ -19,6 +21,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.PersistentProjectileEntity;
 import net.minecraft.entity.projectile.WitherSkullEntity;
 import net.minecraft.particle.ParticleTypes;
+import net.minecraft.registry.Registerable;
 import net.minecraft.registry.tag.DamageTypeTags;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.sound.SoundEvent;
@@ -82,11 +85,11 @@ public class JohnEntity extends HostileEntity implements SkinOverlayOwner {
 
     @Override
     protected void initGoals() {
-        this.goalSelector.add(1, new SwimGoal(this));
+        this.goalSelector.add(2, new SwimGoal(this));
         this.goalSelector.add(1, new MeleeAttackGoal(this, 0.6f, false));
-        this.targetSelector.add(1, new RevengeGoal(this, new Class[0]).setGroupRevenge(new Class[0]));
-        this.targetSelector.add(1, new ActiveTargetGoal<PlayerEntity>((MobEntity)this, PlayerEntity.class, true));
-        this.goalSelector.add(2, new PowderSnowJumpGoal(this, this.getWorld()));
+        this.targetSelector.add(2, new RevengeGoal(this, new Class[0]).setGroupRevenge(new Class[0]));
+        this.targetSelector.add(1, new ActiveTargetGoal<PlayerEntity>((MobEntity)this, PlayerEntity.class, false));
+        this.goalSelector.add(3, new PowderSnowJumpGoal(this, this.getWorld()));
     }
 
     @Override
@@ -118,8 +121,8 @@ public class JohnEntity extends HostileEntity implements SkinOverlayOwner {
     public static DefaultAttributeContainer.Builder createJohnAttributes() {
         return MobEntity.createMobAttributes()
                 .add(EntityAttributes.GENERIC_MAX_HEALTH, 250)
-                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.55f)
-                .add(EntityAttributes.GENERIC_ARMOR, 4.0f)
+                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.6f)
+                .add(EntityAttributes.GENERIC_ARMOR, 12.0f)
                 .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 6.5f)
                 .add(EntityAttributes.GENERIC_ATTACK_SPEED, 2.0f)
                 .add(EntityAttributes.GENERIC_KNOCKBACK_RESISTANCE, 1f);

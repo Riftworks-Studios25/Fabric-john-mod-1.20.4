@@ -32,10 +32,10 @@ public class TestMod implements ModInitializer {
 		FabricDefaultAttributeRegistry.register(ModEntities.JOHN, JohnEntity.createJohnAttributes());
 
 		CustomPortalBuilder.beginPortal()
-				.frameBlock(ModBlocks.JOHN_BLOCK)
+				.frameBlock(ModBlocks.JOHN_FRAME)
 				.lightWithItem(ModItems.JOHN_SHARD)
 				.destDimID(new Identifier(TestMod.MOD_ID, "dim"))
-				.tintColor(156, 109, 37)
+				.tintColor(53318)
 				.registerPortal();
 	}
 

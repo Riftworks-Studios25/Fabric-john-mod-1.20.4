@@ -17,7 +17,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
         getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
-                .add(ModBlocks.JOHN_BLOCK);
+                .add(ModBlocks.JOHN_BLOCK)
+                .add(ModBlocks.JOHN_FRAME);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.JOHNSTONE)

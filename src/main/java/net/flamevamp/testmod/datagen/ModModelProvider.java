@@ -21,6 +21,7 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.JOHN_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.JOHN_FRAME);
         BlockStateModelGenerator.BlockTexturePool johnstonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.JOHNSTONE);
 
         johnstonePool.stairs(ModBlocks.JOHNSTONE_STAIRS);

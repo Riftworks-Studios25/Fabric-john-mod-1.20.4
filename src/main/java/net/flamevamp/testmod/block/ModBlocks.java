@@ -15,6 +15,9 @@ import net.minecraft.util.math.intprovider.UniformIntProvider;
 public class ModBlocks {
 
     public static final Block JOHN_BLOCK = registerBlock("john_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.SCULK).strength(1.5f)));
+
+    public static final Block JOHN_FRAME = registerBlock("john_frame",
             new Block(FabricBlockSettings.copyOf(Blocks.SCULK).strength(1f)));
 
     public static final Block JOHNSTONE = registerBlock("johnstone",

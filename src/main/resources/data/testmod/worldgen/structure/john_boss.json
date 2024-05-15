@@ -2,9 +2,11 @@
   "type": "minecraft:jigsaw",
   "biomes": "testmod:john_void",
   "step": "surface_structures",
-  "spawn_overrides": {},
+  "spawn_overrides": {
+
+  },
   "start_pool": "testmod:john_boss/boss_pool",
-  "size": 10,
+  "size": 15,
   "terrain_adaptation": "beard_thin",
   "start_height": {
     "absolute": 64

@@ -4,7 +4,7 @@
   "has_precipitation": false,
   "effects": {
     "sky_color": 8215340,
-    "fog_color": 4075028,
+    "fog_color": 47165,
     "water_color": 4159204,
     "water_fog_color": 329011,
     "mood_sound": {
@@ -15,11 +15,11 @@
     }
   },
   "spawners": {
+    "monster": [],
     "ambient": [],
     "axolotls": [],
     "creature": [],
     "misc": [],
-    "monster": [],
     "underground_water_creature": [],
     "water_ambient": [],
     "water_creature": []

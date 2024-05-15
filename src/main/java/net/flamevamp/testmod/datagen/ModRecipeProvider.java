@@ -6,7 +6,9 @@ import net.flamevamp.testmod.block.ModBlocks;
 import net.flamevamp.testmod.item.ModItems;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.RecipeProvider;
+import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.*;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
@@ -26,6 +28,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     public void generate(RecipeExporter exporter) {
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS,
                 ModItems.JOHN_SHARD, RecipeCategory.DECORATIONS, ModBlocks.JOHN_BLOCK);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.JOHN_FRAME, 1)
+                .pattern("PEP")
+                .pattern("EJE")
+                .pattern("PEP")
+                .input('J', ModBlocks.JOHN_BLOCK)
+                .input('P', Items.BLAZE_POWDER)
+                .input('E', Items.EMERALD)
+                .criterion(hasItem(ModBlocks.JOHN_BLOCK), conditionsFromItem(ModBlocks.JOHN_BLOCK))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.JOHN_FRAME)));
+
 
         offerSmelting(exporter, NOSE_SMELTABLES, RecipeCategory.FOOD,
                 ModItems.COOKED_NOSE, 0.7f, 400, "nose");
