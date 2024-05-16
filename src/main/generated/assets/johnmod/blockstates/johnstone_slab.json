@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "johnmod:block/johnstone_slab"
+    },
+    "type=double": {
+      "model": "johnmod:block/johnstone"
+    },
+    "type=top": {
+      "model": "johnmod:block/johnstone_slab_top"
+    }
+  }
+}

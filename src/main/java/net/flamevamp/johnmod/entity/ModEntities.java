@@ -1,7 +1,6 @@
 package net.flamevamp.johnmod.entity;
 
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
-import net.fabricmc.fabric.impl.object.builder.FabricEntityType;
 import net.flamevamp.johnmod.JohnMod;
 import net.flamevamp.johnmod.entity.custom.JohnEntity;
 import net.flamevamp.johnmod.entity.custom.NoseEntity;

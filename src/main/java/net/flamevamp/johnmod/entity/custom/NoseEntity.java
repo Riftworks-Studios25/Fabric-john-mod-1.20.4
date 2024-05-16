@@ -19,7 +19,7 @@ import net.minecraft.world.World;
 
 import java.util.Map;
 
-public class NoseEntity extends HostileEntity {
+public class NoseEntity extends HostileEntity  {
 
     public NoseEntity(EntityType<? extends HostileEntity> entityType, World world) {
         super(entityType, world);

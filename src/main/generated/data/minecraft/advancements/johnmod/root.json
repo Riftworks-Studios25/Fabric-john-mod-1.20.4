@@ -1,0 +1,30 @@
+{
+  "criteria": {
+    "got_cooked_nose": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "johnmod:cooked_nose"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": "Obtain a Cooked Nose",
+    "icon": {
+      "item": "johnmod:cooked_nose"
+    },
+    "title": "Something Smells Good"
+  },
+  "requirements": [
+    [
+      "got_cooked_nose"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

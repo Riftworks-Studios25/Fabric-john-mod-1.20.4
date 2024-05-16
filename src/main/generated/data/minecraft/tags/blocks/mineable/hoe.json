@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "johnmod:john_block",
+    "johnmod:john_frame"
+  ]
+}

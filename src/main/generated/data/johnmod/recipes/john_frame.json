@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "minecraft:emerald"
+    },
+    "J": {
+      "item": "johnmod:john_block"
+    },
+    "P": {
+      "item": "minecraft:blaze_powder"
+    }
+  },
+  "pattern": [
+    "PEP",
+    "EJE",
+    "PEP"
+  ],
+  "result": {
+    "item": "johnmod:john_frame"
+  }
+}

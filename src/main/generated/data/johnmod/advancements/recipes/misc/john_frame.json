@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_john_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "johnmod:john_block"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:john_frame"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_john_block"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:john_frame"
+    ]
+  }
+}

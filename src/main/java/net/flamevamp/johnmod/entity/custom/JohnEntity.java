@@ -1,36 +1,25 @@
 package net.flamevamp.johnmod.entity.custom;
 
-import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
+import jdk.jfr.Event;
 import net.minecraft.client.render.entity.feature.SkinOverlayOwner;
-import net.minecraft.client.sound.Sound;
 import net.minecraft.entity.*;
-import net.minecraft.entity.ai.RangedAttackMob;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.boss.BossBar;
 import net.minecraft.entity.boss.ServerBossBar;
-import net.minecraft.entity.boss.WitherEntity;
 import net.minecraft.entity.damage.DamageSource;
-import net.minecraft.entity.damage.DamageType;
-import net.minecraft.entity.damage.DamageTypes;
 import net.minecraft.entity.mob.HostileEntity;
 import net.minecraft.entity.mob.MobEntity;
-import net.minecraft.entity.mob.PathAwareEntity;
+import net.minecraft.entity.mob.Monster;
+import net.minecraft.entity.mob.SlimeEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.PersistentProjectileEntity;
-import net.minecraft.entity.projectile.WitherSkullEntity;
-import net.minecraft.particle.ParticleTypes;
-import net.minecraft.registry.Registerable;
-import net.minecraft.registry.tag.DamageTypeTags;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
-import net.minecraft.util.math.MathHelper;
-import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
-import net.minecraft.world.WorldEvents;
 import org.jetbrains.annotations.Nullable;
 
 public class JohnEntity extends HostileEntity implements SkinOverlayOwner {
@@ -38,9 +27,9 @@ public class JohnEntity extends HostileEntity implements SkinOverlayOwner {
     private final ServerBossBar bossBar = (ServerBossBar)new ServerBossBar(this.getDisplayName(), BossBar.Color.YELLOW, BossBar.Style.PROGRESS).setDarkenSky(false);
     public JohnEntity(EntityType<? extends JohnEntity> entityType, World world) {
         super(entityType, world);
+        this.experiencePoints = 30;
     }
-    private final int[] skullCooldowns = new int[2];
-    private final int[] chargedSkullCooldowns = new int[2];
+
     @Override
     public void setCustomName(@Nullable Text name) {
         super.setCustomName(name);
@@ -116,6 +105,7 @@ public class JohnEntity extends HostileEntity implements SkinOverlayOwner {
     protected SoundEvent getDeathSound() {
         return SoundEvents.ENTITY_VILLAGER_DEATH;
     }
+
 
 
     public static DefaultAttributeContainer.Builder createJohnAttributes() {

@@ -1,14 +1,14 @@
 {
   "structures": [
     {
-      "structure": "johnmod:john_boss",
+      "structure": "johnmod:john_island",
       "weight": 1
     }
   ],
   "placement": {
-    "salt": 121541467,
-    "separation": 12,
-    "spacing": 50,
+    "salt": 129567304,
+    "separation": 6,
+    "spacing": 12,
     "type": "minecraft:random_spread"
   }
 }

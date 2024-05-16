@@ -1,0 +1,5 @@
+// 1.20.4	2024-05-15T22:43:43.1517082	Test Mod/Tags for minecraft:block
+1db21bde8ceee19c82c6d193b96fc2c2f8a13b75 data\minecraft\tags\blocks\mineable\pickaxe.json
+a4c0d43ba34062ce386004dbe43fa4717730a790 data\minecraft\tags\blocks\mineable\hoe.json
+1db21bde8ceee19c82c6d193b96fc2c2f8a13b75 data\minecraft\tags\blocks\needs_diamond_tool.json
+9241482be0364a34a58a957e57481de63c84af4d data\minecraft\tags\blocks\walls.json

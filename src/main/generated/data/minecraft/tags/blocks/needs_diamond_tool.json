@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "johnmod:johnstone",
+    "johnmod:johnstone_stairs",
+    "johnmod:johnstone_slab",
+    "johnmod:johnstone_wall"
+  ]
+}
