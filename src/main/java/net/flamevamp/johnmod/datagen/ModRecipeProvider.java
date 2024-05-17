@@ -29,6 +29,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS,
                 ModItems.JOHN_SHARD, RecipeCategory.DECORATIONS, ModBlocks.JOHN_BLOCK);
 
+        offer2x2CompactingRecipe(exporter, RecipeCategory.MISC, ModItems.JOHN_NOSE, ModItems.JOHN_NOSE_FRAGMENT);
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.JOHN_FRAME, 1)
                 .pattern("PEP")
                 .pattern("EJE")

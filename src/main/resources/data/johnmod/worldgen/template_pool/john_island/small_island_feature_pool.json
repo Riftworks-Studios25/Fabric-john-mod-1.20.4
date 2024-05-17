@@ -1,5 +1,33 @@
 {
   "name": "johnmod:john_island/island_pool",
   "fallback": "minecraft:empty",
-  "elements": []
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "johnmod:island_features/small/small_empty",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "johnmod:island_features/small/small_head_statue1",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "johnmod:island_features/small/small_head_statue2",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
 }

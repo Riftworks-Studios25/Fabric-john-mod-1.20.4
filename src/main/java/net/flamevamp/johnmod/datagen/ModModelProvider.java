@@ -34,6 +34,9 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.JOHN_SHARD, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.JOHN_NOSE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.JOHN_NOSE_FRAGMENT, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.RAW_NOSE, Models.GENERATED);
         itemModelGenerator.register(ModItems.COOKED_NOSE, Models.GENERATED);
 

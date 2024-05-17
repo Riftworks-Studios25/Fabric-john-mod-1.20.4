@@ -1,4 +1,4 @@
-// 1.20.4	2024-05-15T22:43:43.1539713	Test Mod/Recipes
+// 1.20.4	2024-05-16T17:17:44.4605472	Test Mod/Recipes
 0d2186ac9c20bc296851db56359f71b799f0ff6f data\johnmod\advancements\recipes\misc\john_frame.json
 99d2a49aab779fce34676ec78889136899e93c0c data\johnmod\advancements\recipes\building_blocks\johnstone_slab_from_johnstone_stonecutting.json
 a56b76a16291dc76a4232f97fc04e365130048cd data\johnmod\recipes\johnstone_stairs.json
@@ -12,10 +12,12 @@ a98534350df76357163f523c526dd2b758f74f4b data\johnmod\recipes\cooked_nose_from_s
 1267c33a244aee2c4f343c0f25f60db5152ce034 data\johnmod\advancements\recipes\food\cooked_nose_from_smelting_raw_nose.json
 7b79e7e1e8cb38633f2b9c52fe6f9c1030ae9117 data\johnmod\recipes\johnstone_slab_from_johnstone_stonecutting.json
 5844cff39859e51fe80de412e8cbe6b3162dbc14 data\johnmod\recipes\john_shard.json
+51635b6d20ca1ad6eba87e77881cf50ca826cb28 data\johnmod\recipes\john_nose.json
 e0b33222dfc23f47291456881285992468e7d7b5 data\johnmod\advancements\recipes\building_blocks\johnstone_wall.json
 d4452879a4c08a76890143bd65b8901fdd4cfbdc data\johnmod\recipes\johnstone_wall_from_johnstone_stonecutting.json
 ae6a3199d20e203ace515689990818c9174e2433 data\johnmod\advancements\recipes\building_blocks\johnstone_stairs_from_johnstone_stonecutting.json
 bb5884ca0582c8ec503beb4a12dfa5f4196d4b60 data\johnmod\advancements\recipes\decorations\john_block.json
 f0e22a0587fbf5d9e8b561caee07436ae7bb39af data\johnmod\advancements\recipes\building_blocks\johnstone_wall_from_johnstone_stonecutting.json
 2278e1ad7b852bdf4fd405ce42c6008106a780ce data\johnmod\recipes\johnstone_slab.json
+bbb865f9e36cbd7c9482489b876d385cfbcdc1de data\johnmod\advancements\recipes\misc\john_nose.json
 a65640eaabed4c44eed1bf7b40d508489d3feeeb data\johnmod\recipes\john_frame.json

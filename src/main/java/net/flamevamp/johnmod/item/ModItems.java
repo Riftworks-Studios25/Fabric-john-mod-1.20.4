@@ -15,6 +15,10 @@ import net.minecraft.util.Identifier;
 public class ModItems {
     public static final Item JOHN_SHARD = registerItem("john_shard",
             new Item(new FabricItemSettings()));
+    public static final Item JOHN_NOSE = registerItem("john_nose",
+            new Item(new FabricItemSettings().food(ModFoodComponents.JOHN_NOSE)));
+    public static final Item JOHN_NOSE_FRAGMENT = registerItem("john_nose_fragment",
+            new Item(new FabricItemSettings()));
     public static final Item RAW_NOSE = registerItem("raw_nose",
             new Item(new FabricItemSettings().food(ModFoodComponents.RAW_NOSE)));
     public static final Item COOKED_NOSE = registerItem("cooked_nose",
