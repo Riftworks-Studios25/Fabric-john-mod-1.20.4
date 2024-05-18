@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_john_shard": {
+    "has_john_upgrade_smithing_template": {
       "conditions": {
         "items": [
           {
             "items": [
-              "johnmod:john_shard"
+              "johnmod:john_upgrade_smithing_template"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "johnmod:john_frame"
+        "recipe": "johnmod:john_upgrade_smithing_template"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -23,12 +23,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_john_shard"
+      "has_john_upgrade_smithing_template"
     ]
   ],
   "rewards": {
     "recipes": [
-      "johnmod:john_frame"
+      "johnmod:john_upgrade_smithing_template"
     ]
   }
 }

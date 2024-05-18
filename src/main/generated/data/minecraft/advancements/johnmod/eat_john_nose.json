@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:johnmod/got_cooked_nose",
+  "criteria": {
+    "eat_john_nose": {
+      "conditions": {
+        "item": {
+          "items": [
+            "johnmod:john_nose"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "description": "Eat John's Nose",
+    "frame": "challenge",
+    "icon": {
+      "item": "johnmod:john_nose"
+    },
+    "title": "Something Tastes Good"
+  },
+  "requirements": [
+    [
+      "eat_john_nose"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

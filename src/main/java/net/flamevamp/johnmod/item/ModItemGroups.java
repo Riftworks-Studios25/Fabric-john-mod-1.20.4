@@ -18,6 +18,7 @@ public class ModItemGroups {
                         entries.add(ModItems.JOHN_SHARD);
                         entries.add(ModItems.JOHN_NOSE);
                         entries.add(ModItems.JOHN_NOSE_FRAGMENT);
+                        entries.add(ModItems.JOHN_UPGRADE_SMITHING_TEMPLATE);
 
                         entries.add(ModItems.RAW_NOSE);
                         entries.add(ModItems.COOKED_NOSE);
@@ -33,6 +34,7 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.JOHN_BLOCK);
                         entries.add(ModBlocks.JOHN_FRAME);
+                        entries.add(ModItems.SHARD_AND_POWDER);
 
                         entries.add(ModBlocks.JOHNSTONE);
                         entries.add(ModBlocks.JOHNSTONE_STAIRS);

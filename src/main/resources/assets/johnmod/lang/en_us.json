@@ -2,15 +2,18 @@
   "item.johnmod.john_shard": "John Shard",
   "item.johnmod.john_nose": "John's Nose",
   "item.johnmod.john_nose_fragment": "Fragment of John's Nose",
+  "item.johnmod.john_upgrade_smithing_template": "Smithing Template",
 
   "item.johnmod.raw_nose": "Raw Nose",
   "item.johnmod.cooked_nose": "Cooked Nose",
 
+  "item.johnmod.shard_and_powder": "Shard and Powder",
+
   "item.johnmod.john_pickaxe": "John Pickaxe",
-  "item.johnmod.john_axe": "John Pickaxe",
-  "item.johnmod.john_sword": "John Pickaxe",
-  "item.johnmod.john_shovel": "John Pickaxe",
-  "item.johnmod.john_hoe": "John Pickaxe",
+  "item.johnmod.john_axe": "John Axe",
+  "item.johnmod.john_sword": "John Sword",
+  "item.johnmod.john_shovel": "John Shovel",
+  "item.johnmod.john_hoe": "John Hoe",
 
   "entity.johnmod.john": "John",
   "entity.johnmod.nose": "Nose",

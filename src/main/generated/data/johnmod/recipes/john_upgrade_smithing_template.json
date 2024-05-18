@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "J": {
+      "item": "johnmod:john_block"
+    },
+    "S": {
+      "item": "johnmod:john_upgrade_smithing_template"
+    }
+  },
+  "pattern": [
+    "DSD",
+    "DJD",
+    "DDD"
+  ],
+  "result": {
+    "count": 2,
+    "item": "johnmod:john_upgrade_smithing_template"
+  }
+}

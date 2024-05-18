@@ -3,10 +3,10 @@
   "category": "misc",
   "key": {
     "E": {
-      "item": "minecraft:emerald"
+      "item": "johnmod:john_shard"
     },
     "J": {
-      "item": "johnmod:john_block"
+      "item": "minecraft:emerald_block"
     },
     "P": {
       "item": "minecraft:blaze_powder"

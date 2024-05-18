@@ -4,12 +4,12 @@
         "item": "johnmod:john_upgrade_smithing_template"
     },
     "base": {
-        "item": "minecraft:netherite_pickaxe"
+        "item": "minecraft:netherite_sword"
     },
     "addition": {
         "item": "johnmod:john_nose"
     },
     "result": {
-        "item": "johnmod:john_pickaxe"
+        "item": "johnmod:john_sword"
     }
 }

@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:johnstone_slab_from_johnstone_stonecutting"
+        "recipe": "johnmod:johnstone_slab_from_johnstone_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:johnstone_slab_from_johnstone_stonecutting"
+      "johnmod:johnstone_slab_from_johnstone_stonecutting"
     ]
   }
 }

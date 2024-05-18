@@ -1,11 +1,12 @@
 {
+  "parent": "minecraft:johnmod/root",
   "criteria": {
-    "got_john_shard": {
+    "got_cooked_nose": {
       "conditions": {
         "items": [
           {
             "items": [
-              "johnmod:john_shard"
+              "johnmod:cooked_nose"
             ]
           }
         ]
@@ -14,16 +15,15 @@
     }
   },
   "display": {
-    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
-    "description": "Start your journey by obtaining a John Shard",
+    "description": "Obtain a Cooked Nose",
     "icon": {
-      "item": "johnmod:john_shard"
+      "item": "johnmod:cooked_nose"
     },
-    "title": "John?"
+    "title": "Something Smells Good"
   },
   "requirements": [
     [
-      "got_john_shard"
+      "got_cooked_nose"
     ]
   ],
   "sends_telemetry_event": true

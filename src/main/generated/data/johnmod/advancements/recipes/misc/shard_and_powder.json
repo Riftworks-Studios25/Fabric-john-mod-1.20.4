@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "johnmod:john_frame"
+        "recipe": "johnmod:shard_and_powder"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "johnmod:john_frame"
+      "johnmod:shard_and_powder"
     ]
   }
 }

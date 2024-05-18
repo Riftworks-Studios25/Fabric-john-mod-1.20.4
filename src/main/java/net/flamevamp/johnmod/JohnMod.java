@@ -33,7 +33,7 @@ public class JohnMod implements ModInitializer {
 
 		CustomPortalBuilder.beginPortal()
 				.frameBlock(ModBlocks.JOHN_FRAME)
-				.lightWithItem(ModItems.JOHN_SHARD)
+				.lightWithItem(ModItems.SHARD_AND_POWDER)
 				.destDimID(new Identifier(JohnMod.MOD_ID, "dim"))
 				.tintColor(53318)
 				.registerPortal();

@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:johnstone_stairs"
+        "recipe": "johnmod:johnstone_stairs"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:johnstone_stairs"
+      "johnmod:johnstone_stairs"
     ]
   }
 }
