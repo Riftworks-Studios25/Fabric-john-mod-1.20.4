@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:smithing_transform",
+    "template": {
+        "item": "johnmod:john_shard"
+    },
+    "base": {
+        "item": "minecraft:netherite_pickaxe"
+    },
+    "addition": {
+        "item": "johnmod:john_nose"
+    },
+    "result": {
+        "item": "johnmod:john_pickaxe"
+    }
+}

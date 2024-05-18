@@ -6,6 +6,12 @@
   "item.johnmod.raw_nose": "Raw Nose",
   "item.johnmod.cooked_nose": "Cooked Nose",
 
+  "item.johnmod.john_pickaxe": "John Pickaxe",
+  "item.johnmod.john_axe": "John Pickaxe",
+  "item.johnmod.john_sword": "John Pickaxe",
+  "item.johnmod.john_shovel": "John Pickaxe",
+  "item.johnmod.john_hoe": "John Pickaxe",
+
   "entity.johnmod.john": "John",
   "entity.johnmod.nose": "Nose",
   "entity.johnmod.witch_nose": "Witch Nose",

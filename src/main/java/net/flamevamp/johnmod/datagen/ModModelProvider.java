@@ -40,6 +40,12 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RAW_NOSE, Models.GENERATED);
         itemModelGenerator.register(ModItems.COOKED_NOSE, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.JOHN_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.JOHN_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.JOHN_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.JOHN_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.JOHN_SWORD, Models.HANDHELD);
+
         itemModelGenerator.register(ModItems.NOSE_SPAWN_EGG,
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")),
                         Optional.empty()));

@@ -4,9 +4,11 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.flamevamp.johnmod.block.ModBlocks;
 import net.flamevamp.johnmod.item.ModItems;
+import net.minecraft.data.DataProvider;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.RecipeProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.data.server.recipe.SmithingTransformRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.*;
@@ -17,7 +19,7 @@ import org.apache.commons.compress.harmony.pack200.NewAttribute;
 import java.util.List;
 import java.util.function.Consumer;
 
-public class ModRecipeProvider extends FabricRecipeProvider {
+public class ModRecipeProvider extends FabricRecipeProvider implements DataProvider {
     public ModRecipeProvider(FabricDataOutput output) {
         super(output);
     }

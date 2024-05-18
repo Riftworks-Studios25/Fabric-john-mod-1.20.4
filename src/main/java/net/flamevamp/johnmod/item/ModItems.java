@@ -5,9 +5,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.flamevamp.johnmod.JohnMod;
 import net.flamevamp.johnmod.entity.ModEntities;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
-import net.minecraft.item.SpawnEggItem;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -19,6 +17,21 @@ public class ModItems {
             new Item(new FabricItemSettings().food(ModFoodComponents.JOHN_NOSE)));
     public static final Item JOHN_NOSE_FRAGMENT = registerItem("john_nose_fragment",
             new Item(new FabricItemSettings()));
+    public static final Item JOHN_PICKAXE = registerItem("john_pickaxe",
+            new PickaxeItem(ModToolMaterial.JOHN, 1, -2.8f,
+                    new FabricItemSettings().fireproof()));
+    public static final Item JOHN_AXE = registerItem("john_axe",
+            new AxeItem(ModToolMaterial.JOHN, 5, -3.0f,
+                    new FabricItemSettings().fireproof()));
+    public static final Item JOHN_SHOVEL = registerItem("john_shovel",
+            new ShovelItem(ModToolMaterial.JOHN, 1.5f, -3.0f,
+                    new FabricItemSettings().fireproof()));
+    public static final Item JOHN_HOE = registerItem("john_hoe",
+            new HoeItem(ModToolMaterial.JOHN, -4, 0.0f,
+                    new FabricItemSettings().fireproof()));
+    public static final Item JOHN_SWORD = registerItem("john_sword",
+            new SwordItem(ModToolMaterial.JOHN, 3, -2.4f,
+                    new FabricItemSettings().fireproof()));
     public static final Item RAW_NOSE = registerItem("raw_nose",
             new Item(new FabricItemSettings().food(ModFoodComponents.RAW_NOSE)));
     public static final Item COOKED_NOSE = registerItem("cooked_nose",
