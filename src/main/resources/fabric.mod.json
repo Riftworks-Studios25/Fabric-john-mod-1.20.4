@@ -3,13 +3,12 @@
 	"id": "johnmod",
 	"version": "${version}",
 	"name": "John Mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "This is John by FlameVamp.",
 	"authors": [
 		"FlameVamp"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/FlameVamp/Fabric-john-mod-1.20.4"
 	},
 	"license": "MIT",
 	"icon": "assets/johnmod/icon.png",
