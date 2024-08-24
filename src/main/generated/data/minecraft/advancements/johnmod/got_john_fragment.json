@@ -15,9 +15,9 @@
     }
   },
   "display": {
-    "description": "Kill John and obtain a Fragment of his Nose",
+    "description": "Kill John and obtain his Nose",
     "icon": {
-      "item": "johnmod:john_nose_fragment"
+      "item": "johnmod:john_nose"
     },
     "title": "The Scent of Victory"
   },

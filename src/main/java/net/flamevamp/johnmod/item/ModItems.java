@@ -5,6 +5,9 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.flamevamp.johnmod.JohnMod;
 import net.flamevamp.johnmod.entity.ModEntities;
+import net.minecraft.block.AbstractBlock;
+import net.minecraft.block.WearableCarvedPumpkinBlock;
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -33,7 +36,7 @@ public class ModItems {
     public static final Item JOHN_SHARD = registerItem("john_shard",
             new Item(new FabricItemSettings()));
     public static final Item JOHN_NOSE = registerItem("john_nose",
-            new Item(new FabricItemSettings().food(ModFoodComponents.JOHN_NOSE)));
+            new NosePerks(new FabricItemSettings().equipmentSlot(new HeadSlotThing()).food(ModFoodComponents.JOHN_NOSE)));
     public static final Item JOHN_NOSE_FRAGMENT = registerItem("john_nose_fragment",
             new Item(new FabricItemSettings()));
     public static final Item SHARD_AND_POWDER = registerItem("shard_and_powder",
@@ -53,8 +56,9 @@ public class ModItems {
     public static final Item JOHN_SWORD = registerItem("john_sword",
             new SwordItem(ModToolMaterial.JOHN, 3, -2.4f,
                     new FabricItemSettings().fireproof()));
+
     public static final Item RAW_NOSE = registerItem("raw_nose",
-            new Item(new FabricItemSettings().food(ModFoodComponents.RAW_NOSE)));
+            new Item(new FabricItemSettings().equipmentSlot(new HeadSlotThing()).food(ModFoodComponents.RAW_NOSE)));
     public static final Item COOKED_NOSE = registerItem("cooked_nose",
             new Item(new FabricItemSettings().food(ModFoodComponents.COOKED_NOSE)));
 

@@ -7,8 +7,8 @@
     }
   },
   "pattern": [
-    "##",
-    "##"
+    "#",
+    "#"
   ],
   "result": {
     "item": "johnmod:john_nose"

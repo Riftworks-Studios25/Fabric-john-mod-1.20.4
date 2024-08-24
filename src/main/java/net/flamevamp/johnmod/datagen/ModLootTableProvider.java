@@ -2,15 +2,8 @@ package net.flamevamp.johnmod.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
-import net.fabricmc.fabric.api.datagen.v1.provider.FabricLootTableProvider;
 import net.flamevamp.johnmod.block.ModBlocks;
-import net.flamevamp.johnmod.entity.ModEntities;
-import net.minecraft.data.server.loottable.EntityLootTableGenerator;
-import net.minecraft.item.Item;
-import net.minecraft.loot.LootTable;
-import net.minecraft.loot.entry.LootPoolEntry;
-
-import javax.swing.text.html.parser.Entity;
+import net.flamevamp.johnmod.item.ModItems;
 
 public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public ModLootTableProvider(FabricDataOutput dataOutput) {

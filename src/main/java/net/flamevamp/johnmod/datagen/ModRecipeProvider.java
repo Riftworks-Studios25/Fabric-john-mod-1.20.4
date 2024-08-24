@@ -6,16 +6,16 @@ import net.flamevamp.johnmod.block.ModBlocks;
 import net.flamevamp.johnmod.item.ModItems;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.DataProvider;
-import net.minecraft.data.server.recipe.*;
+import net.minecraft.data.server.recipe.RecipeExporter;
+import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
-import net.minecraft.recipe.*;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
-import org.apache.commons.compress.harmony.pack200.NewAttribute;
 
 import java.util.List;
-import java.util.function.Consumer;
 
 public class ModRecipeProvider extends FabricRecipeProvider implements DataProvider {
     public ModRecipeProvider(FabricDataOutput output) {
@@ -34,7 +34,6 @@ public class ModRecipeProvider extends FabricRecipeProvider implements DataProvi
                 .input(Items.BLAZE_POWDER)
                 .criterion(hasItem(ModItems.JOHN_SHARD), conditionsFromItem(ModItems.JOHN_SHARD))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.SHARD_AND_POWDER)));
-
 
         offer2x2CompactingRecipe(exporter, RecipeCategory.MISC, ModItems.JOHN_NOSE, ModItems.JOHN_NOSE_FRAGMENT);
 
@@ -57,7 +56,6 @@ public class ModRecipeProvider extends FabricRecipeProvider implements DataProvi
                 .input('S', ModItems.JOHN_UPGRADE_SMITHING_TEMPLATE)
                 .criterion(hasItem(ModItems.JOHN_UPGRADE_SMITHING_TEMPLATE), conditionsFromItem(ModItems.JOHN_UPGRADE_SMITHING_TEMPLATE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.JOHN_UPGRADE_SMITHING_TEMPLATE)));
-
 
         offerSmelting(exporter, NOSE_SMELTABLES, RecipeCategory.FOOD,
                 ModItems.COOKED_NOSE, 0.7f, 400, "nose");

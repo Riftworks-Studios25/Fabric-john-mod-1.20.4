@@ -1,7 +1,7 @@
-// 1.20.4	2024-05-18T15:17:24.4450539	John Mod/Block Loot Tables
-20a43674818858a72106a5dda8540b9c835f1196 data\johnmod\loot_tables\blocks\johnstone_wall.json
+// 1.20.4	2024-08-23T19:00:42.0887362	John Mod/Block Loot Tables
 c1e54eca811b9238a86392cdbb0844349dc41891 data\johnmod\loot_tables\blocks\johnstone.json
+20a43674818858a72106a5dda8540b9c835f1196 data\johnmod\loot_tables\blocks\johnstone_wall.json
 2baa553403badb112178396ed5ffc0278bd4e13b data\johnmod\loot_tables\blocks\johnstone_slab.json
-8fd5b88ae425cc0d75d293674fa63c4bbad2add2 data\johnmod\loot_tables\blocks\johnstone_stairs.json
-e84de659311911425053ae6bd251f30b55f8bffc data\johnmod\loot_tables\blocks\john_frame.json
 5b9c5fbbaed1c275e0d49b334a2c181198932bf9 data\johnmod\loot_tables\blocks\john_block.json
+e84de659311911425053ae6bd251f30b55f8bffc data\johnmod\loot_tables\blocks\john_frame.json
+8fd5b88ae425cc0d75d293674fa63c4bbad2add2 data\johnmod\loot_tables\blocks\johnstone_stairs.json

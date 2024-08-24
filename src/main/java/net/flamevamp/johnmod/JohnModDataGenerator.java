@@ -81,9 +81,9 @@ public class JohnModDataGenerator implements DataGeneratorEntrypoint {
 
 			AdvancementEntry noseFragment = Advancement.Builder.create().parent(rootAdvancement)
 					.display(
-							ModItems.JOHN_NOSE_FRAGMENT, // The display icon
+							ModItems.JOHN_NOSE, // The display icon
 							Text.literal("The Scent of Victory"), // The title
-							Text.literal("Kill John and obtain a Fragment of his Nose"), // The description
+							Text.literal("Kill John and obtain his Nose"), // The description
 							null,							AdvancementFrame.TASK, // Options: TASK, CHALLENGE, GOAL
 							true, // Show toast top right
 							true, // Announce to chat

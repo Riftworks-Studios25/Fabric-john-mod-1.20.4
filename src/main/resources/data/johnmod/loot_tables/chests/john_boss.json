@@ -78,7 +78,7 @@
           "count": {
             "type": "uniform",
             "min": 1,
-            "max": 16
+            "max": 20
           }
         }
       ],
