@@ -24,7 +24,7 @@ import org.jetbrains.annotations.Nullable;
 
 public class JohnEntity extends HostileEntity implements SkinOverlayOwner {
 
-    private final ServerBossBar bossBar = (ServerBossBar)new ServerBossBar(this.getDisplayName(), BossBar.Color.YELLOW, BossBar.Style.PROGRESS).setDarkenSky(false);
+    private final ServerBossBar bossBar = (ServerBossBar)new ServerBossBar(this.getDisplayName(), BossBar.Color.GREEN, BossBar.Style.PROGRESS).setDarkenSky(false);
     public JohnEntity(EntityType<? extends JohnEntity> entityType, World world) {
         super(entityType, world);
         this.experiencePoints = 30;
