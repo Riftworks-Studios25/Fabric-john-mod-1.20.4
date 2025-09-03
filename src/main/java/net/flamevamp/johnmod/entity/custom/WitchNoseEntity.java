@@ -56,7 +56,9 @@ public class WitchNoseEntity extends NoseEntity {
         if (super.tryAttack(target)) {
             if (target instanceof LivingEntity) {
                 int i = 0;
-                if (this.getWorld().getDifficulty() == Difficulty.NORMAL) {
+                if (this.getWorld().getDifficulty() == Difficulty.EASY) {
+                    i = 3;
+                } else if (this.getWorld().getDifficulty() == Difficulty.NORMAL) {
                     i = 5;
                 } else if (this.getWorld().getDifficulty() == Difficulty.HARD) {
                     i = 10;
